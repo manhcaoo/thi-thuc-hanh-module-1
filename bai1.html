@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Giải phương trình bậc nhất</title>
+  </head>
+  <body>
+    <script>
+      function giaiPhuongTrinhBacNhat(a, b) {
+        if (isNaN(a) || isNaN(b)) {
+          alert("nhập vào số!");
+        } else if (a == 0) {
+          alert("Phương trình vô nghiệm!");
+        } else if (b == 0) {
+          alert("Phương trình có vô số nghiệm!");
+        } else {
+          x = -b / a;
+          console.log(x);
+          alert("Kết quả x là: " + x);
+        }
+      }
+      giaiPhuongTrinhBacNhat(12, 8);
+    </script>
+  </body>
+</html>
